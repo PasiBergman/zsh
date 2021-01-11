@@ -4,6 +4,9 @@ export PATH="$HOME/.local/bin:$PATH"
 [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 fpath=(/usr/share/licenses/zsh-completions $fpath)
 
+# Aliases
+[ -f $HOME/.config/zsh/alias.sh ] && source $HOME/.config/zsh/alias.sh
+
 # Aliases for tmux projects
 [ -f $HOME/.config/tmux/aliases.sh ] && source $HOME/.config/tmux/aliases.sh
 
