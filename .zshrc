@@ -16,8 +16,17 @@ autoload -U colors && colors
 # Prompt theme
 # [ -f $HOME/.config/zsh/themes/dstufft.zsh-theme ] && source $HOME/.config/zsh/themes/dstufft.zsh-theme
 
-export LC_ALL=fi_FI.UTF-8
-export LC_CTYPE=fi_FI.UTF-8
+#export LC_ALL=fi_FI.UTF-8
+#export LC_CTYPE=fi_FI.UTF-8
+export LC_CTYPE="en_US.UTF-8"
+export LC_TIME="en_US.UTF-8"
+export LC_MONETARY="fi_FI.UTF-8"
+export LC_NAME="fi_FI.UTF-8"
+export LC_ADDRESS="fi_FI.UTF-8"
+export LC_TELEPHONE="fi_FI.UTF-8"
+export LC_MEASUREMENT="fi_FI.UTF-8"
+export LC_IDENTIFICATION="fi_FI.UTF-8"
+export LC_ALL=
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US
 export EDITOR=nvim
