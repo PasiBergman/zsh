@@ -1,2 +1,3 @@
-[ -f ~/.zshrc ] || ln -s ~/.config/zsh/.zshrc ~/.zshrc
-[ -d ~/script ] || ln -s ~/.config/zsh/script ~/script
+[ -f ~/.zshenv ] || ln -s $HOME/.config/zsh/.zshenv $HOME/.zshenv
+[ -f ~/.zshrc ] || ln -s $HOME/.config/zsh/.zshrc $HOME/.zshrc
+[ -d ~/script ] || ln -s $HOME/.config/zsh/script $HOME/script
