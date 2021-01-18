@@ -51,6 +51,13 @@ rgcd () {
 [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ] \
     && source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Raspberry Pi specific sources, [[]] not POSIX compliant.
+if [[ "$(uname -a)" == *"raspi"*  ]]; then
+    [ -f $HOME/.config/zsh/script/alias-raspi.sh ] \
+        && source $HOME/.config/zsh/script/alias-raspi.sh
+fi
+
+
 # Use specified node version
 nvm use $NODE_VERSION 1>/dev/null
 # System information
